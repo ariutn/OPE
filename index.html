@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب نقاط النوادي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>موقع حساب نقاط النوادي</h1>
+
+        <div class="club-actions">
+            <div class="club-input-group">
+                <input type="text" id="clubNameInput" placeholder="اسم النادي" class="text-input">
+                <label for="clubLogoInput" class="icon-button logo-upload-button">
+                    <i class="fas fa-upload"></i>
+                    <input type="file" id="clubLogoInput" accept="image/*" style="display: none;">
+                </label>
+                <button id="addClubBtn" class="dark-button">إضافة نادي</button>
+            </div>
+        </div>
+
+        <div id="clubsContainer" class="clubs-container">
+            </div>
+
+        <div class="timer-section">
+            <div class="timer-display">
+                <span id="minutes">10</span>:<span id="seconds">00</span>
+            </div>
+            <button id="startTimerBtn" class="icon-button blue-button"><i class="fas fa-play"></i></button>
+            <button id="stopTimerBtn" class="dark-button">إيقاف الوقت مؤقتاً</button>
+        </div>
+
+        <audio id="alarmSound" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
